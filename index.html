@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -119,6 +120,33 @@
   					</div>
 			</section>
 
+			<section class="container slick">
+				 <h2 class="my-projects" id="Projects"># Projects</h2>
+         		 <div class="slider" id="slider">
+            	 <div><img src="img/project-1.png" width="600">
+            	 	  <figcaption class='caption'>
+                            <h3>Responsive project</h3>
+                            <span>A website template</span>
+                            <a href="#" target='_blank'>Take a look</a>
+                        </figcaption>
+            	 </div>
+            	 <div><img src="img/project-2.png" width="600">
+            	       <figcaption class='caption'>
+                            <h3>My lib</h3>
+                            <span>A website template</span>
+                            <a href="#" target='_blank'>Take a look</a>
+                        </figcaption>
+                 </div>
+            	 <div><img src="img/project-2.png" width="600">
+            	        <figcaption class='caption'>
+                            <h3>Odessa Classics</h3>
+                            <span>A website template</span>
+                            <a href="#" target='_blank'>Take a look</a>
+                        </figcaption></div>
+        		 </div>
+        	</section>
+
+
 			<section class="container">
 					<h2 class="my-experience" id="Experience"># Experience</h2>
 					<ul class="timeline">
@@ -159,7 +187,7 @@
         <footer class="footer"> 
         	<div class="contact-form">
         		<span class="footer-heading">Contact me:</span>
-        		<span>Email:</span><a href="alexander.gromovoj@gmail.com" class="link">alexander.gromovoj@gmail.com</a>
+        		<span class="email">Email: </span><span><a href="alexander.gromovoj@gmail.com" class="email-link">alexander.gromovoj@gmail.com</a></span>
         		<div class="links-helper">
                     	<a href="https://www.linkedin.com/in/oleksandr-hromovyi/" class="link-logo">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" fill="none" viewBox="0 0 24 28">
@@ -184,64 +212,41 @@
                     <span><a href="#Projects" class="nav-links-a-footer">Projects</a></span>
                     <span><a href="#Experience" class="nav-links-a-footer">Experience</a></span>
 
+<div class="ground-footer"><span class="aaa">© 2021 Alexander Gromovoj</span></div>
                      </div>
         		
         </footer>
 
+         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script type="text/javascript">
+ $(document).ready(function(){
+
+            $('.slider').slick({
+               dots: true,
+               arrows: false,
+               speed: 300,
+               slidesToShow: 2,
+               slidesToScroll: 1,
+                responsive: [{
+                   breakpoint: 900,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                      }
+                }
+
+              ]
+
+            });
+            
+          }); 
+</script>
      
 
 
 
-        <!-- <nav class="nav">
-            <span id="btn-menu" class="btn-menu">
-                <span class="burger-lines"></span>
-                </span>  	     
-            <section class="hero container">
-            	 <div class="hero-nav-menu">
-                   
-                </div>
-                <div class="hero-left">
-                <div class="hero-left-text">
-                    <span class="hero-left-text-info-year">since 2021</span>
-                    <span class="hero-left-text-info-profession">Markup Developer</span>
-                    <span class="hero-left-text-info-perspective">who hopes to become Junior Front-End Developer in the nearest future</span> 
-                </div>
-               <div class="hero-slogan-text">
-                    <span class="open-brace">.fear {</span>
-                    <span class="attribute">display: none;</span>
-                    <span class="close-brace">}</span>
-                </div> 
-                </div> 
-            <div class="hero-right">
-            </div> 
-           </section> 
-        
- 
-
-            <aside class="aside-links">
-               
-            </aside>
-            </nav>
-          
-
-
-            
-        <main class="main">
-            <div class="photo"></div>
-
-        </main>
-        <footer class="footer">
-        </footer>
-    </div>
-   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.btn-menu').click(function () {
-                $('.nav').toggleClass('active-menu');
-            });
-        });
-    </script>
--->
+      
       
     
 </body>
