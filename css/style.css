@@ -130,6 +130,7 @@ position: absolute;
   margin-top: 30px;
   font: bold 40px/44px "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
   color: #fff;
+  text-align: center;
 }
 
 .welcome-text {
@@ -172,6 +173,9 @@ position: absolute;
   text-align: center;
 }
 
+.email-icon {
+  display: none;
+}
 
 
 /**/
@@ -759,10 +763,10 @@ position: absolute;
   display: block;
   width: 12px;
   height: 12px;
-  margin-left: -9px;
+  margin-left: -6px;
   background: #fff;
   border-radius: 10px;
-  border: 4px solid rgb(255,80,80);
+  border: 4px solid var(--orange);
   z-index: 10;
 }
 
@@ -819,7 +823,7 @@ position: absolute;
 
 }
 
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media screen and (min-width: 400px ?? max-width: 700px) {
 
 .direction-l .desc,
 .direction-r .desc {
@@ -842,23 +846,20 @@ position: absolute;
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 200px;
   background: #000;
-  margin: 0 auto;
-  padding: 0 150px;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   position: relative;
+
+  
 
  }
 .footer-heading {
   font: bold 24px/28px Roboto, Arial, sans-serif;
   color: #fff;
   display: block;
+  padding-bottom: 10px;
 
 }
 .contact-form {
@@ -877,7 +878,8 @@ position: absolute;
 .nav-links-a-footer {
   display: block;
   font: 18px/21px Roboto, Arial, sans-serif;
-   color: var(--orange);
+  color: var(--orange);
+  padding: 2px;
 }
 
 .aaa {
@@ -894,6 +896,7 @@ font: 16px/18px Roboto, Arial, sans-serif;
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
+  z-index: 20;
 }
 
 /**/
@@ -987,7 +990,7 @@ font: 16px/18px Roboto, Arial, sans-serif;
 
 /**/
 @media only screen
-and (min-width: 0)
+and (min-width: 500px)
 and (max-width: 899px) {
 .btn-menu {
   display: block;
@@ -999,6 +1002,7 @@ and (max-width: 899px) {
   flex-grow: 0;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .logo {
   width: 60px;
@@ -1009,9 +1013,122 @@ and (max-width: 899px) {
 .header {
   height: 100px;
   background: #000;
+  z-index: 20;
 }
 .container .slick section {
   display: none;
 }
+  .slick img{
+    width: 100%;
 
+  }
+
+  .slick-dots button {
+    width: 2px;
+    height: 8px;
+    border: solid 1px #000;
+    font-size: 0;
+    background: #fff;
+    outline: none;
+    border-radius: 50%;
+    margin-top: 24px; 
+    padding: 4px;
+  }
 }
+
+@media only screen
+and (min-width: 300px)
+and (max-width: 499px) {
+  .btn-menu {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.nav-links {
+  display: none;
+}
+.logo-name {
+  flex-grow: 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+  width: 40px;
+  height: auto;
+}
+.author {
+  font: bold 14px/17px Roboto, Arial, sans-serif;
+}
+.header {
+  height: 100px;
+  background: #000;
+  z-index: 20;
+  padding: 20px 10px;
+}
+.container .slick section {
+  display: none;
+}
+  .slick img{
+    width: 100%;
+
+  }
+
+  .slick-dots button {
+    width: 2px;
+    height: 8px;
+    border: solid 1px #000;
+    font-size: 0;
+    background: #fff;
+    outline: none;
+    border-radius: 50%;
+    margin-top: 24px; 
+    padding: 4px;
+  }
+
+.burger-lines, .burger-lines:after, .burger-lines:before {
+  position: absolute;
+  top: 42%;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.burger-lines:before {
+  content: '';
+  top: -7px;
+}
+
+.burger-lines:after {
+  content: '';
+  top: 7px;
+}
+
+.version-ru, .version-eng, .vertical-line {
+  font: bold 14px/17px Roboto, Arial, sans-serif;
+  }
+
+  .email-icon {
+  display: block;
+}
+.my-email {
+  display: none;
+}
+.welcome-prime-text {
+  font: bold 30px/34px "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.welcome-text {
+  font: bold 20px/24px "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.about-me-text {
+  font: 18px/21px Roboto, Arial, sans-serif;
+}
+.about-me, .my-experience, .skill, .my-projects {
+  padding-top: 30px;
+}
+.parallax {
+  margin-top: 30px;
+  min-height: 100px;
+}
+}
+
