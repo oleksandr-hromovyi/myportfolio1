@@ -17,6 +17,33 @@ body {
   padding: 0 50px 100px;
  }*/
 
+/**/
+#menu-button-close {
+  width: 48px;
+  height: 31px;
+  background-color: #000;
+
+}
+.mdiv {
+  height: 31px;
+  width: 5px;
+  margin-left: 12px;
+  background-color: white;
+  transform: rotate(45deg);
+  z-index: 1;
+  display: inline-block;
+  
+}
+
+.md {
+  height: 31px;
+  width: 5px;
+  background-color: white;
+  transform: rotate(90deg);
+  z-index: 2;
+  overflow: hidden;
+}
+/**/
 .header {
   display: flex;
   justify-content: space-between;
@@ -46,7 +73,7 @@ body {
 
 .btn-close {
   border: 0;
-  margin-right: 53px;
+  margin-right: 72px;
 
 }
 /*анимация лого*/
@@ -1059,6 +1086,6 @@ and (max-width: 899px) {
     display: block;
     position: relative;
     background: #000;
-    left:-10px;
-  }
+    
+    }
 }
