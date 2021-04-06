@@ -41,7 +41,7 @@ body {
   background-color: white;
   transform: rotate(90deg);
   z-index: 2;
-  overflow: hidden;
+  
 }
 /**/
 .header {
@@ -68,6 +68,7 @@ body {
   font: bold 24px/28px Roboto, Arial, sans-serif;
   color: #fff;
   align-self: center;
+
 
 }
 
@@ -906,9 +907,33 @@ and (max-width: 499px) {
   width: 20px;
 }
 .btn-close {
-  
-  margin-right: 51px;
+    margin-right: 72px;
 
+}
+#menu-button-close {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+
+}
+.mdiv {
+  height: 20px;
+  width: 2px;
+  margin-left: 12px;
+  background-color: white;
+  transform: rotate(45deg);
+  z-index: 1;
+  display: inline-block;
+  
+}
+
+.md {
+  height: 20px;
+  width: 2px;
+  background-color: white;
+  transform: rotate(90deg);
+  z-index: 2;
+  
 }
 .nav-links {
   display: none;
