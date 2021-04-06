@@ -878,6 +878,11 @@ and (max-width: 499px) {
   height: 20px;
   width: 20px;
 }
+.btn-close {
+  
+  margin-right: 51px;
+
+}
 .nav-links {
   display: none;
 }
@@ -980,6 +985,11 @@ and (max-width: 499px) {
   top:80px;
   left: -20px;
   }
+
+.btn-close svg {
+  height: 29px;
+  width: 29px;
+}
 
 }
 
