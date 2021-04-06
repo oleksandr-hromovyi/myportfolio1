@@ -43,6 +43,12 @@ body {
   align-self: center;
 
 }
+
+.btn-close {
+  border: 0;
+  margin-right: 53px;
+
+}
 /*анимация лого*/
 
 @keyframes logo {
@@ -135,8 +141,8 @@ position: absolute;
 
 .welcome-text {
 
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
+  flex-wrap: wrap;  
   font: bold 30px/44px "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
   color: #fff;
   text-align: center;
@@ -522,7 +528,7 @@ position: absolute;
 
 /* ================ Timeline Media Queries ================ */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 680px) {
 
 .timeline {
   width: 100%;
@@ -640,6 +646,8 @@ position: absolute;
 }
 /**/
 
+
+/**/
 .footer {
   display: flex;
   justify-content: space-around;
@@ -760,6 +768,11 @@ font: 16px/18px Roboto, Arial, sans-serif;
   display: none;
 }
 
+.btn-close {
+  display: none;
+}
+
+
 .burger-lines, .burger-lines:after, .burger-lines:before {
   position: absolute;
   top: 42%;
@@ -838,10 +851,23 @@ and (max-width: 899px) {
   margin-top: 30px;
   min-height: 100px;
 }
+
+ .menu-open .header:before {
+  content: "";
+  height: 100vh;
+  width: calc(100vw + 20px);
+  background: black;
+  position: absolute;
+  top:100px;
+  left: -20px;
+
+   }
+
+
 }
 
 @media only screen
-and (min-width: 300px)
+and (min-width: 0px)
 and (max-width: 499px) {
 
   .footer {
@@ -869,7 +895,7 @@ and (max-width: 499px) {
   font: bold 14px/17px Roboto, Arial, sans-serif;
 }
 .header {
-  height: 65px;
+  height: 80px;
   background: #000;
   z-index: 20;
   padding: 20px;
@@ -945,12 +971,21 @@ and (max-width: 499px) {
 .nav-links-a-footer {
   font: bold 14px/17px Roboto, Arial, sans-serif;
 }
+ .menu-open .header:before {
+  content: "";
+  height: 100vh;
+  width: calc(100vw + 20px);
+  background: black;
+  position: absolute;
+  top:80px;
+  left: -20px;
+  }
 
 }
 
 /**/
 @media only screen
-and (min-width: 300px)
+and (min-width: 0px)
 and (max-width: 899px) {
 
 .skill-group .html  {
@@ -983,4 +1018,37 @@ and (max-width: 899px) {
   width: 80%;
   transition: all 2s;
 }
+
+ .menu-open .nav-links {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left:20%;
+   }
+
+
+ .menu-open .nav-links-a {
+  display: block;
+   }
+ .menu-open  .nav-links-a:hover::after {
+  width:0;
+ }
+
+.par {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+ .menu-open .header .btn-menu {
+    display: none;
+  }
+
+.menu-open .header .btn-close {
+    display: block;
+    position: relative;
+    background: #000;
+    left:-10px;
+  }
 }
