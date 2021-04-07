@@ -1293,7 +1293,7 @@ height: 60vh;
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("https://github.com/oleksandr-hromovyi/myportfolio/blob/master/img/project-1.png?raw=true");
+  background-image: url("../img/project-1.png");
 }
 .slide:nth-child(1) .slide__overlay-path {
   fill: #918d8d;
@@ -1308,7 +1308,7 @@ height: 60vh;
 }
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("https://github.com/oleksandr-hromovyi/myportfolio/blob/master/img/project-2.png?raw=true");
+  background-image: url("../img/project-2.png");
 }
 .slide:nth-child(2) .slide__overlay-path {
   fill: #208120;
@@ -1323,7 +1323,7 @@ height: 60vh;
 }
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("https://github.com/oleksandr-hromovyi/myportfolio/blob/master/img/project-3.png?raw=true");
+  background-image: url("../img/project-3.png");
 }
 .slide:nth-child(3) .slide__overlay-path {
   fill: #da1818;
