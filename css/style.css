@@ -954,12 +954,12 @@ and (max-width: 499px) {
 }
 }
 
-/*убрал анимацию для планшетов и телефона*/
+
 @media only screen
 and (min-width: 0px)
 and (max-width: 899px) {
 
-.skill-group .html  {
+/*.skill-group .html  {
   width: 90%;
 }
 
@@ -986,7 +986,7 @@ and (max-width: 899px) {
 .skill-group .svg, .skill-group .photoshop {
   width: 80%;
   transition: all 2s;
-}
+}*/
 
 .menu-open .nav-links {
   display: block;
