@@ -4,54 +4,41 @@
     <title>Alexander Gromovoy portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-  
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-
-
-<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
-	
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
+	<div class="wrapper" id="wrapper">
+    		<div id='stars' class="stars"></div>
+			<div id='stars2'class="stars"></div>
+			<div id='stars3'class="stars"></div>
 
-  
-    	<div class="wrapper" id="wrapper">
-    		        <div id='stars' class="stars"></div>
-					<div id='stars2'class="stars"></div>
-					<div id='stars3'class="stars"></div>
-    				   	
     	<header class="header">
-    		
     		<span id="btn-menu" class="btn-menu">
-              <span class="burger-lines"></span>
+            <span class="burger-lines"></span>
             </span>
-<!--<button class="btn-close" id="menu-button-close"><svg width="55" height="55" viewBox="0 0 60 " fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M34 30.9646L18.7971 15.7617L15.2616 19.2973L30.4644 34.5001L15.2617 49.7029L18.7972 53.2384L34 38.0357L49.2027 53.2384L52.7382 49.7029L37.5355 34.5001L52.7384 19.2973L49.2028 15.7617L34 30.9646Z" fill="white"/>
-              </svg>
-             </button> -->
-<div class="btn-close" id="menu-button-close">
-  <div class="mdiv">
-    <div class="md"></div>
-  </div>
-</div>
 
-            
-            <div class="logo-name">
+		<div class="btn-close" id="menu-button-close">
+			<div class="mdiv">
+   			<div class="md"></div>
+ 			</div>
+		</div>
+
+        <div class="logo-name">
 			<a href="#wrapper"><img src="img/logo.png" class="logo"></a>
 			<h2 class="author">Alexander Gromovoy</h2>
-		   </div>
+		    </div>
+
         	<div class="nav-links"> 
-        	 		<span><a href="#AboutMe" class="nav-links-a">About Me</a></span>
-                    <span><a href="#Skills" class="nav-links-a">Skills</a></span>
-                    <span><a href="#Projects" class="nav-links-a">Projects</a></span>
-                    <span><a href="#Experience" class="nav-links-a">Experience</a></span>
+        	 	<span><a href="#AboutMe" class="nav-links-a">About Me</a></span>
+                <span><a href="#Skills" class="nav-links-a">Skills</a></span>
+                <span><a href="#Projects" class="nav-links-a">Projects</a></span>
+                <span><a href="#Experience" class="nav-links-a">Experience</a></span>
             </div>
+
         	<div class="language-versions">
         			<span><a href="#" class="version-ru">RU</a></span>
         			<span class="vertical-line">|</span>
@@ -61,7 +48,11 @@
 
         <main>         			
            	<section class="main">
-          			<img src=img/portrait.png height="150" class="portrait">
+           			<div class="coin" id="coin">
+  						<div class="side-a"><img src=img/portrait.png class="portrait"></div>
+  						<div class="side-b"><img src=img/portrait1.png class="portrait"></div>
+						</div>
+          			
           			<span class="welcome-text-prime">Hi, I'm Alexander</span>
           			<span class="welcome-text">Student, Markup Developer & Super Positive Person</span>
 
@@ -82,7 +73,7 @@
                         </svg></a>
                		</div>
             </section>
-        </div>
+    </div>
 
 			<section class="container">
 					<a href="#" class="par" id="AboutMe"></a>
@@ -91,9 +82,9 @@
 					<span class="about-me-text">I'm Alexander Gromovoy from Ukraine, Odessa!</span>
 					<span class="about-me-text">I love create sites, swimming and travelling, taking photos and learning new things!</span>
 					<span class="about-me-text">Feel free to get in touch or take a look at my past work below.</span>
-
-					<div class="parallax"></div>
 			</section>
+
+			<div class="parallax"></div>
 
             <section class="container">
             	<a href="#" class="par" id="Skills"></a>
@@ -150,13 +141,13 @@
  					<div class="skills">
     					<span>Bootstrap</span>
     					<div class="skills-bar bootstrap" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-    						<span class="percent">5%</span>
+    						<span class="percent">15%</span>
     					</div>
   					</div>
   					<div class="skills">
     					<span>jQuery</span>
     					<div class="skills-bar jQuery" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-    						<span class="percent">3%</span>
+    						<span class="percent">10%</span>
     					</div>
   					</div>
   					</div>
@@ -165,83 +156,56 @@
 			<section class="container">
 				<a href="#" class="par" id="Projects"></a>
 				 <h2 class="my-projects"># Projects</h2>
-         		<!-- <div class="slider" id="slider">
-            	 <div><img src="img/project-1.png" width="600">
-            	 	  <figcaption class='caption'>
-                            <h3 class="web-name">Responsive project</h3>
-                            <span class="web-name-description">A website template</span>
-                            <a href="https://oleksandr-hromovyi.github.io/responsive-project/" target='_blank' class="web-link">Take a look</a>
-                        </figcaption>
-            	 </div>
-            	 <div><img src="img/project-2.png" width="600">
-            	       <figcaption class='caption'>
-                            <h3 class="web-name">My lib</h3>
-                            <span class="web-name-description">A website template</span>
-                            <a href="#" target='_blank' class="web-link">Take a look</a>
-                        </figcaption>
-                 </div>
-            	 <div><img src="img/project-3.png" width="600">
-            	        <figcaption class='caption'>
-                            <h3 class="web-name">Odessa Classics</h3>
-                            <span class="web-name-description">A website template</span>
-                            <a href="#" target='_blank' class="web-link">Take a look</a>
-                        </figcaption></div>
-        		 </div> -->
-   	  
-</section>
+           </section>
 
-<section class="slideshow">
-<div class="slider-container">
-  <div class="slider-control left inactive"></div>
-  <div class="slider-control right"></div>
-  <ul class="slider-pagi"></ul>
-  <div class="slider">
-    <div class="slide slide-0 active">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 170,0 600,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">My Lib</h2>
-          <p class="slide__text-desc">Library with small tricks, interesting links, examples, etc.</p>
-          <a href="https://oleksandr-hromovyi.github.io/responsive-project/" class="slide__text-link">Project link</a>
-        </div>
-      </div>
-    </div>
-    <div class="slide slide-1 ">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 170,0 600,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Responsive project</h2>
-          <p class="slide__text-desc">An example of responsive web design with burger menu.</p>
-          <a class="slide__text-link">Project link</a>
-        </div>
-      </div>
-    </div>
-    <div class="slide slide-2">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 170,0 600,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Odessa Classics</h2>
-          <p class="slide__text-desc">Update website of the festival of academic music in Odessa. </p>
-          <a class="slide__text-link">Project link</a>
-        </div>
-      </div>
-    </div>
-    
-</div>
-</div>
-</section>
-
-
-
+				<div class="slideshow">
+				<div class="slider-container">
+				  <div class="slider-control left inactive"></div>
+				  <div class="slider-control right"></div>
+				  <ul class="slider-pagi"></ul>
+				  <div class="slider">
+				    <div class="slide slide-0 active">
+				      <div class="slide__bg"></div>
+				      <div class="slide__content">
+				        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+				          <path class="slide__overlay-path" d="M0,0 170,0 600,405 0,405" />
+				        </svg>
+				        <div class="slide__text">
+				          <h2 class="slide__text-heading">My Lib</h2>
+				          <p class="slide__text-desc">Library with small tricks, interesting links, examples, etc.</p>
+				          <a href="https://oleksandr-hromovyi.github.io/responsive-project/" class="slide__text-link">Project link</a>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="slide slide-1 ">
+				      <div class="slide__bg"></div>
+				      <div class="slide__content">
+				        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+				          <path class="slide__overlay-path" d="M0,0 170,0 600,405 0,405" />
+				        </svg>
+				        <div class="slide__text">
+				          <h2 class="slide__text-heading">Responsive project</h2>
+				          <p class="slide__text-desc">An example of responsive web design with burger menu.</p>
+				          <a class="slide__text-link">Project link</a>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="slide slide-2">
+				      <div class="slide__bg"></div>
+				      <div class="slide__content">
+				        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+				          <path class="slide__overlay-path" d="M0,0 170,0 600,405 0,405" />
+				        </svg>
+				        <div class="slide__text">
+				          <h2 class="slide__text-heading">Odessa Classics</h2>
+				          <p class="slide__text-desc">Update website of the festival of academic music in Odessa. </p>
+				          <a class="slide__text-link">Project link</a>
+				        </div>
+				      </div>
+				    </div>
+				</div>
+				</div>
+				
 			<section class="container">
 					<a href="#" class="par" id="Experience"></a>
 					<h2 class="my-experience"># Experience</h2>
@@ -337,160 +301,152 @@
             </div>
         </footer>
 
-         <script src="js/script.js"></script>
-        
-       <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script type="text/javascript">
- 				$(document).ready(function(){
-	            $('.slider').slick({
-               dots: true,
-               arrows: false,
-               speed: 300,
-               slidesToShow: 2,
-               slidesToScroll: 1,
-                responsive: [{
-                   breakpoint: 1280,
-                      settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                      }
-                }
+        <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript">
+		      $(document).ready(function() {
+		  
+		  var $slider = $(".slider"),
+		      $slideBGs = $(".slide__bg"),
+		      diff = 0,
+		      curSlide = 0,
+		      numOfSlides = $(".slide").length-1,
+		      animating = false,
+		      animTime = 500,
+		      autoSlideTimeout,
+		      autoSlideDelay = 6000,
+		      $pagination = $(".slider-pagi");
+		  
+		  function createBullets() {
+		    for (var i = 0; i < numOfSlides+1; i++) {
+		      var $li = $("<li class='slider-pagi__elem'></li>");
+		      $li.addClass("slider-pagi__elem-"+i).data("page", i);
+		      if (!i) $li.addClass("active");
+		      $pagination.append($li);
+		    }
+		  };
+		  
+		  createBullets();
+		  
+		  function manageControls() {
+		    $(".slider-control").removeClass("inactive");
+		    if (!curSlide) $(".slider-control.left").addClass("inactive");
+		    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+		  };
+		  
+		  function autoSlide() {
+		    autoSlideTimeout = setTimeout(function() {
+		      curSlide++;
+		      if (curSlide > numOfSlides) curSlide = 0;
+		      changeSlides();
+		    }, autoSlideDelay);
+		  };
+		  
+		  autoSlide();
+		  
+		  function changeSlides(instant) {
+		    if (!instant) {
+		      animating = true;
+		      manageControls();
+		      $slider.addClass("animating");
+		      $slider.css("top");
+		      $(".slide").removeClass("active");
+		      $(".slide-"+curSlide).addClass("active");
+		      setTimeout(function() {
+		        $slider.removeClass("animating");
+		        animating = false;
+		      }, animTime);
+		    }
+		    window.clearTimeout(autoSlideTimeout);
+		    $(".slider-pagi__elem").removeClass("active");
+		    $(".slider-pagi__elem-"+curSlide).addClass("active");
+		    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
+		    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
+		    diff = 0;
+		    autoSlide();
+		  }
 
-              ]
+		  function navigateLeft() {
+		    if (animating) return;
+		    if (curSlide > 0) curSlide--;
+		    changeSlides();
+		  }
 
-            });
-            
-          }); 
-</script> -->
+		  function navigateRight() {
+		    if (animating) return;
+		    if (curSlide < numOfSlides) curSlide++;
+		    changeSlides();
+		  }
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript">
-      $(document).ready(function() {
-  
-  var $slider = $(".slider"),
-      $slideBGs = $(".slide__bg"),
-      diff = 0,
-      curSlide = 0,
-      numOfSlides = $(".slide").length-1,
-      animating = false,
-      animTime = 500,
-      autoSlideTimeout,
-      autoSlideDelay = 6000,
-      $pagination = $(".slider-pagi");
-  
-  function createBullets() {
-    for (var i = 0; i < numOfSlides+1; i++) {
-      var $li = $("<li class='slider-pagi__elem'></li>");
-      $li.addClass("slider-pagi__elem-"+i).data("page", i);
-      if (!i) $li.addClass("active");
-      $pagination.append($li);
-    }
-  };
-  
-  createBullets();
-  
-  function manageControls() {
-    $(".slider-control").removeClass("inactive");
-    if (!curSlide) $(".slider-control.left").addClass("inactive");
-    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
-  };
-  
-  function autoSlide() {
-    autoSlideTimeout = setTimeout(function() {
-      curSlide++;
-      if (curSlide > numOfSlides) curSlide = 0;
-      changeSlides();
-    }, autoSlideDelay);
-  };
-  
-  autoSlide();
-  
-  function changeSlides(instant) {
-    if (!instant) {
-      animating = true;
-      manageControls();
-      $slider.addClass("animating");
-      $slider.css("top");
-      $(".slide").removeClass("active");
-      $(".slide-"+curSlide).addClass("active");
-      setTimeout(function() {
-        $slider.removeClass("animating");
-        animating = false;
-      }, animTime);
-    }
-    window.clearTimeout(autoSlideTimeout);
-    $(".slider-pagi__elem").removeClass("active");
-    $(".slider-pagi__elem-"+curSlide).addClass("active");
-    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
-    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
-    diff = 0;
-    autoSlide();
-  }
+		  $(document).on("mousedown touchstart", ".slider", function(e) {
+		    if (animating) return;
+		    window.clearTimeout(autoSlideTimeout);
+		    var startX = e.pageX || e.originalEvent.touches[0].pageX,
+		        winW = $(window).width();
+		    diff = 0;
+		    
+		    $(document).on("mousemove touchmove", function(e) {
+		      var x = e.pageX || e.originalEvent.touches[0].pageX;
+		      diff = (startX - x) / winW * 70;
+		      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+		      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
+		      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
+		    });
+		  });
+		  
+		  $(document).on("mouseup touchend", function(e) {
+		    $(document).off("mousemove touchmove");
+		    if (animating) return;
+		    if (!diff) {
+		      changeSlides(true);
+		      return;
+		    }
+		    if (diff > -8 && diff < 8) {
+		      changeSlides();
+		      return;
+		    }
+		    if (diff <= -8) {
+		      navigateLeft();
+		    }
+		    if (diff >= 8) {
+		      navigateRight();
+		    }
+		  });
+		  
+		  $(document).on("click", ".slider-control", function() {
+		    if ($(this).hasClass("left")) {
+		      navigateLeft();
+		    } else {
+		      navigateRight();
+		    }
+		  });
+		  
+		  $(document).on("click", ".slider-pagi__elem", function() {
+		    curSlide = $(this).data("page");
+		    changeSlides();
+		  });
+		  
+		});
+		    </script>
+	    <script type="text/javascript">
+	    	jQuery(document).ready(function($){
 
-  function navigateLeft() {
-    if (animating) return;
-    if (curSlide > 0) curSlide--;
-    changeSlides();
-  }
+	  $('#coin').on('click', function(){
+	    var flipResult = Math.random();
+	    $('#coin').removeClass();
+	    setTimeout(function(){
+	      if(flipResult <= 0.5){
+	        $('#coin').addClass('heads');
+	        console.log('it is head');
+	      }
+	      else{
+	        $('#coin').addClass('tails');
+	        console.log('it is tails');
+	      }
+	    }, 100);
+	  });
+	});
 
-  function navigateRight() {
-    if (animating) return;
-    if (curSlide < numOfSlides) curSlide++;
-    changeSlides();
-  }
-
-  $(document).on("mousedown touchstart", ".slider", function(e) {
-    if (animating) return;
-    window.clearTimeout(autoSlideTimeout);
-    var startX = e.pageX || e.originalEvent.touches[0].pageX,
-        winW = $(window).width();
-    diff = 0;
-    
-    $(document).on("mousemove touchmove", function(e) {
-      var x = e.pageX || e.originalEvent.touches[0].pageX;
-      diff = (startX - x) / winW * 70;
-      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
-      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
-      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
-    });
-  });
-  
-  $(document).on("mouseup touchend", function(e) {
-    $(document).off("mousemove touchmove");
-    if (animating) return;
-    if (!diff) {
-      changeSlides(true);
-      return;
-    }
-    if (diff > -8 && diff < 8) {
-      changeSlides();
-      return;
-    }
-    if (diff <= -8) {
-      navigateLeft();
-    }
-    if (diff >= 8) {
-      navigateRight();
-    }
-  });
-  
-  $(document).on("click", ".slider-control", function() {
-    if ($(this).hasClass("left")) {
-      navigateLeft();
-    } else {
-      navigateRight();
-    }
-  });
-  
-  $(document).on("click", ".slider-pagi__elem", function() {
-    curSlide = $(this).data("page");
-    changeSlides();
-  });
-  
-});
-    </script>
-
-
+	    </script>
 </body>
 </html>
