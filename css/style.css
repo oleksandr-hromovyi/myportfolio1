@@ -959,35 +959,6 @@ and (max-width: 499px) {
 and (min-width: 0px)
 and (max-width: 899px) {
 
-/*.skill-group .html  {
-  width: 90%;
-}
-
-.skill-group .percent {
-   opacity: 1;
-}
-
-.skill-group .css, .skill-group .responsive {
-  width: 85%;
-}
-
-.skill-group .bootstrap {
-  width: 5%;
-}
-
-.skill-group .jQuery {
-  width: 3%;
-}
-
-.skill-group .git, .skill-group .zeplin, .skill-group .figma {
-  width: 50%;
-}
-
-.skill-group .svg, .skill-group .photoshop {
-  width: 80%;
-  transition: all 2s;
-}*/
-
 .menu-open .nav-links {
   display: block;
   position: absolute;
@@ -1165,6 +1136,18 @@ and (max-width: 899px) {
   .slide:nth-child(1) .slide__text {
     background-color: rgba(0, 0, 0, 0.9);
   }
+    .slide:nth-child(2) .slide__text {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+   .slide:nth-child(3) .slide__text {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media (max-width: 401px) {
+.slide__bg {
+   height: 60%;
+ }
+
 }
 .slide:nth-child(2) {
   left: 100%;
@@ -1176,11 +1159,6 @@ and (max-width: 899px) {
 .slide:nth-child(2) .slide__overlay-path {
   fill: #208120;
 }
-@media (max-width: 991px) {
-  .slide:nth-child(2) .slide__text {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-}
 .slide:nth-child(3) {
   left: 200%;
 }
@@ -1190,11 +1168,6 @@ and (max-width: 899px) {
 }
 .slide:nth-child(3) .slide__overlay-path {
   fill: #da1818;
-}
-@media (max-width: 991px) {
-  .slide:nth-child(3) .slide__text {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
 }
 
 .slide__content {
@@ -1267,7 +1240,7 @@ and (max-width: 899px) {
 }
 @media (max-width: 991px) {
   .slide__text-desc {
-     font-size: 21px;
+     font-size: 16px;
      color: #fff;
   }
 }
