@@ -789,9 +789,9 @@ and (max-width: 899px) {
 and (min-width: 0px)
 and (max-width: 499px) {
 
-.portrait, .coin#coin {
- height: 200px;
- width: 200px;
+.portrait, #coin {
+ height: 200px !important;
+ width: 200px !important;
 }
 
 .footer {
