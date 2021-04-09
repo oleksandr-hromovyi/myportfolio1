@@ -860,6 +860,11 @@ and (max-width: 499px) {
   background: #000;
   z-index: 20;
   padding: 20px;
+  width: 100%;
+}
+
+label.toggle-item {
+  margin-left: 42px;
 }
 
 .burger-lines, .burger-lines:after, .burger-lines:before {
@@ -1350,7 +1355,7 @@ background: var(--prime-color);
 }
 .toggle-item {
   box-sizing: border-box;
-  vertical-align: center;
+  
 }
 .toggle-item:before, .toggle-item:after {
   content: "";
@@ -1380,7 +1385,7 @@ input {
   width: 20px;
 }
 
-label.toggle-item {
+.toggle-item {
   width: 50px;
   background: #2e394d;
   height: 3em;
@@ -1390,6 +1395,10 @@ label.toggle-item {
   transition: all 0.3s ease;
   transform-origin: 20% center;
   cursor: pointer;
+  margin-left: 70px;
+}
+label.toggle-item :focus {
+  outline: none;
 }
 label.toggle-item:before {
   display: block;
@@ -1430,6 +1439,7 @@ label.toggle-item:before {
 #normal:checked + label {
   background: #4caf50;
 }
+
 #normal:checked + label:before {
   left: 67px;
 }
