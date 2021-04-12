@@ -794,6 +794,10 @@ and (max-width: 499px) {
  width: 200px !important;
 }
 
+#coin.tails:focus {
+outline:none !important;
+}
+
 .footer {
   height: 150px;
 }
