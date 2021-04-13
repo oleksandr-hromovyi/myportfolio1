@@ -40,6 +40,10 @@ body {
   position: relative;
 }
 
+.links-helper {
+  z-index: 1;
+}
+
 
 /*begin btn close*/
 .btn-close {
@@ -1125,7 +1129,7 @@ div.slideshow {
 }
 
 .slide:nth-child(1) .slide__overlay-path {
-  fill: #918d8d;
+  fill: var(--brand-color);
 }
 
 @media (max-width: 991px) {
@@ -1153,7 +1157,7 @@ div.slideshow {
   background-image: url("../img/project-2.png");
 }
 .slide:nth-child(2) .slide__overlay-path {
-  fill: #208120;
+  fill: var(--brand-color);
 }
 .slide:nth-child(3) {
   left: 200%;
@@ -1163,7 +1167,7 @@ div.slideshow {
   background-image: url("../img/project-3.png");
 }
 .slide:nth-child(3) .slide__overlay-path {
-  fill: #da1818;
+  fill: var(--brand-color);
 }
 
 .slide__content {
