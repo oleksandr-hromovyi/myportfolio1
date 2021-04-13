@@ -1736,4 +1736,7 @@ and (max-height: 700px)
   .main {
     justify-content: flex-end;
   }
+  .links-helper {
+    margin-bottom: 10vh;
+  }
 }
