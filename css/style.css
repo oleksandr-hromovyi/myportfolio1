@@ -1729,3 +1729,10 @@ label.toggle-item:before {
     transform: translateX(-1000px);
   }
 }
+
+@media (max-height: 700px) and (orientation: landscape) 
+{
+  .main {
+    justify-content: flex-end;
+  }
+}
