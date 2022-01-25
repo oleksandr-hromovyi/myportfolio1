@@ -264,14 +264,14 @@ body {
   transition: all 2s;
 }
 
-.skill-group .bootstrap {
-  width: 5%;
+.skill-group .react {
+  width: 10%;
   -webkit-transition: 2s;
   transition: all 2s;
 }
 
-.skill-group:hover .bootstrap {
-  width: 15%;
+.skill-group:hover .react {
+  width: 55%;
   -webkit-transition: 2s;
   transition: all 2s;
 }
